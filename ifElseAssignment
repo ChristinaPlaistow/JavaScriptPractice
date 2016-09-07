@@ -1,0 +1,24 @@
+<script>
+// ask for career and hobby
+var career = prompt("What is your career");
+var hobby = prompt("What is your hobby");
+var response;
+//create series of if to create ouput
+
+if (career==hobby)
+{
+	response = "One who makes money doing what one loves smiles at the world!";
+}
+else if(career!=hobby)
+{
+	response="Why not monetize your passion?";
+}
+
+
+
+//output will use window.document.write();
+//window.document.write();
+//document.write(); 
+
+document.write( response + " "+"</br>Thanks for playing!");
+</script>
