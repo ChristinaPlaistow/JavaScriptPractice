@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Craps game-->
+
+<head>
+	<title>Play Craps</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="craps.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="mainDiv">
+<h1>Welcome</h1>
+
+<p>Would you like to play craps?</p>
+
+
+<button type="button" onclick="howManyPlayers() ">yes, play</button>
+
+
+<button type="button" onclick="myFunctionNo()">no</button>
+<p id="demoNo" style="display:none">Goodbye!</p>
+
+<p id="players1" style="display:none"> </p>
+
+<p id="whoseRolling" style="display:none"></p>
+
+<p id="lineBet" style="display:none">Would you like to place a line bet?
+<button type="button" onclick="lineBetplaced()">line bet</button>
+<button type="button" onclick="noLineBetPlaced()"> no line bet</button>
+</p>
+
+<!--ROLL BUTTON-->
+
+<p id="rollButton" style="display:none">
+<button type="button" onclick = RollDice() >Roll</button>
+</p>
+
+<!-- THIS ARE DISPLAYS IF THERE IS A POINT NUMBER AND DISPLAYS THE POINT NUMBER-->
+<!-- THIS SECTION SHOULD HIDE WHEN THE ROUND ENDS-->
+	<p id="pointNumberbox" style="display:none"></p>
+
+<!--THIS AREA DIAPLAYS CURRENT ROLL VALUE-->
+	<p id="roll" style="display:none"></p>
+
+
+
+
+<!--EXTRA BUTTON CODE-->
+
+<p id="demo3" style="display:none">
+<button type="button" onclick="document.getElementById('demo4').style.display='block'">3</button>
+</p>
+
+<p id="demo4" style="display:none">
+<button type="button" onclick="document.getElementById('demo4').style.display='block'">4</button>
+</p>
+
+</div>
+
+<script src="craps2.js"></script>
+
+</body>
+</html>
